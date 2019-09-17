@@ -13,10 +13,10 @@
 
 <div class="container">
     <div ng-app="myApp" ng-controller="mainController" data-ng-init="init()">
-        <h2>Drag The table to see effect</h2>
+        <h2>Drag The table </h2>
         <table class="table table-bordered">
             <tr>
-                <th>student list</th>
+                <th>customer</th>
             </tr>
             <tbody ui-sortable ng-model="items">
             <tr ng-repeat="item in items">
@@ -33,7 +33,7 @@
 
 
     myApp.controller("mainController", function($scope) {
-      $scope.items = ["student 1", "student 2", "student 3", "student 4"];
+      $scope.items = ["customer 1", "customer 2", "customer 3", "customer 4"];
         
 
       $scope.sortableOptions = {
